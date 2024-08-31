@@ -13,27 +13,27 @@
     <!-- Navbar - Upmost row -->
     <nav>
         <div class="main-nav container flex">
-            <a href="#" class="company-logo">
+            <a href="#" onclick="reload()" class="company-logo">
                 <img src="./assets/blunt-news-logo.png" alt="company-logo">
             </a>
             <div class="nav-links flex">
                 <ul class="flex">
-                    <li class="hover-link nav-item">Cricket</li>
-                    <li class="hover-link nav-item">World</li>
-                    <li class="hover-link nav-item">Science</li>
-                    <li class="hover-link nav-item">Business</li>
+                    <li class="hover-link nav-item" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+                    <li class="hover-link nav-item" id="world-news" onclick="onNavItemClick('world-news')">World</li>
+                    <li class="hover-link nav-item" id="science-technology" onclick="onNavItemClick('science-technology')">Science</li>
+                    <li class="hover-link nav-item" id="business" onclick="onNavItemClick('business')">Business</li>
                 </ul>
             </div>
             <div class="search-bar flex">
-                <input type="text" class="news-input" placeholder="eg. Virat Kohli, Mukesh Ambani">
-                <button class="search-button">Search</button>
+                <input type="text" class="news-input" placeholder="eg. Virat Kohli, Mukesh Ambani" id="news-input">
+                <button class="search-button" id="search-button">Search</button>
             </div>
         </div>
     </nav>
 
     <main>
-        <div class="cards-container container flex">
-            
+        <div class="cards-container container flex" id="cards-container">
+
         </div>
     </main>
 
@@ -43,9 +43,9 @@
                 <img src="https://via.placeholder.com/300x200" alt="news-image" id="news-img"></img>
             </div>
             <div class="card-content">
-                <h3>BJP Wins 2024 Election</h3>
-                <h6 class="news-source">End Gadget 31/08/2024</h6>
-                <p class="news-article">
+                <h3 id="news-title">BJP Wins 2024 Election</h3>
+                <h6 class="news-source" id="news-source">End Gadget 31/08/2024</h6>
+                <p class="news-article" id="news-desc">
                     In the 2014 Indian general elections, the Bharatiya Janata Party (BJP)
                     achieved a historic victory, securing a decisive mandate with 282 seats, allowing it to form the
                     government independently. Led by Narendra Modi, the win marked a significant shift in Indian
@@ -66,6 +66,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+    <script src="./script/config.js"></script>
     <script src="./script/main-script.js"></script>
 </body>
 

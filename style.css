@@ -59,6 +59,10 @@ ul {
     color: rgb(227, 184, 184);
 }
 
+.active {
+    color: #2294ed;
+}
+
 /* Navbar */
 nav {
     background-color: var(--navbar-color);
@@ -150,8 +154,8 @@ main {
 }
 
 .card {
-    width: 18rem;
-    text-align: justify;
+    width: 25rem;
+    height: 30rem;
     border-radius: 1rem;
     border: 0.2rem solid var(--primary-text-color);
     background-color: white;
@@ -168,13 +172,22 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.card-header img {
+    width: 25rem;
+    height: 15rem;
+}
+
 .card-content {
     padding: 1rem;
 }
 
 .card-content h3 {
-    font-size: 1.35rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
+}
+
+.card-content p {
+    overflow:auto;
 }
 
 .news-source {
