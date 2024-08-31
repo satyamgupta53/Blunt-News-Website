@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&family=Roboto:wght@400;500;700&display=swap');
+
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom variables & Redefining elements */
+:root {
+    --navbar-color: #fffcf9;
+    --primary-text-color: #134B70;
+    --secondary-text-color: #35555e;
+    --accent-color: #E2BFD9;
+    --hover-color: #2294ed;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 80rem;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--hover-color);
+}
+
+.hover-link:active {
+    color: rgb(227, 184, 184);
+}
+
+/* Navbar */
+nav {
+    background-color: var(--navbar-color);
+    box-shadow: 0 0 0.3rem var(--secondary-text-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.main-nav {
+    padding-block: 0.75rem;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+.company-logo {
+    padding-right: 13rem;
+}
+
+.company-logo img {
+    width: 15rem;
+}
+
+.nav-links ul {
+    gap: 2rem;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.search-bar {
+    height: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.news-input {
+    cursor: text;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    width: 20rem;
+    padding-inline: 2rem;
+    margin-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+    border: 0.1rem solid black;
+}
+
+.news-input[placeholder] {
+    font-size: 0.9rem;
+}
+
+.search-button {
+    width: fit-content;
+    cursor: pointer;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    background-color: var(--hover-color);
+    color: white;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+}
+
+.search-button:hover {
+    background-color: #134B70;
+}
+
+/* Card container */
+main {
+    padding-top: 5rem;
+    background-image: url('./assets/banner-background.png');
+    background-size: 24rem;
+    background-color: #a2d6fec9;
+}
+
+.cards-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1.25rem;
+
+    padding-block: 2rem; 
+    padding-inline: 1.5rem;
+}
+
+.card {
+    width: 18rem;
+    text-align: justify;
+    border-radius: 1rem;
+    border: 0.2rem solid var(--primary-text-color);
+    background-color: white;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+.card:hover {
+    box-shadow: 0.1rem 0.1rem 0.5rem black;
+    transform: translateY(-0.5rem);
+}
+
+.card-header {
+    margin-bottom: 0.5rem;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-size: 1.35rem;
+    line-height: 1.5rem;
+}
+
+.news-source {
+    font-size: 0.7rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.sub-footer {
+    background-color: var(--primary-text-color);
+    height: 2.5rem;
+    justify-content: space-between;
+    padding-inline: 30rem;
+    color: white;
+}
+
+.sub-footer a {
+    color: white;
+}
