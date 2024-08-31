@@ -157,7 +157,7 @@ main {
     width: 25rem;
     height: 30rem;
     border-radius: 1rem;
-    border: 0.2rem solid var(--primary-text-color);
+    /* border: 0.2rem solid var(--primary-text-color); */
     background-color: white;
     overflow: hidden;
     transition: 0.3s ease-out;
